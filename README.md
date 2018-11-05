@@ -29,4 +29,5 @@ Ansible has the ability to run commands in a structured format instead of raw in
 ## Referenced Projects
 
 https://github.com/ansible/ansible
+
 https://github.com/redcanaryco/atomic-red-team

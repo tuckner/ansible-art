@@ -3,7 +3,7 @@
 This is an Ansible Action Plugin to run Atomics from the Atomic Red Team project. Ansible will detect the remote operating system, gather commands needed to be run for the technique given, remote to the device, and execute the commands via
 Ansible's 'raw' command execution.
 
-# Installation
+# Install
 
 Add 'art.py' to your Ansible installation in the action plugin directory or your custom action plugin directory.
 

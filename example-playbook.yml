@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+    - atomic_dir: /path/to/atomic-red-team/atomics/
+  tasks:
+    - name: Run atomic T1168
+      art:
+        atomic: T1168
+        args: {"script": "/path/to/script.sh"}

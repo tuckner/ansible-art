@@ -25,3 +25,8 @@ atomic red team atomics rather than pull from Github.
 # Running & Creating Specific Atomic Playbooks
 
 Ansible has the ability to run commands in a structured format instead of raw input, but this requires specific playbooks to be created to issue commands related to the atomic.  This is time consuming and thus this 'ad-hoc' way of running playbooks can suffice if there are no playbooks created for the technique you wish to run.
+
+## Referenced Projects
+
+https://github.com/ansible/ansible
+https://github.com/redcanaryco/atomic-red-team

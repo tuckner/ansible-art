@@ -15,11 +15,11 @@ your custom action plugin directory.
 
 # Running Ad-hoc Atomics
 
-Example playbook `playbook.yml` included. Provide the atomic to be tested and 
+Example playbook `example-playbook.yml` included. Provide the atomic to be tested and 
 relevant parameters to pass to the atomic shown in the example.
 
 ```
-ansible-playbook playbook.yml
+ansible-playbook example-playbook.yml
 ```
 
 Set the 'atomic_dir' variable in your playbook to use a local version of

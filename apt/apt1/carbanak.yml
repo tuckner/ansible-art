@@ -1,0 +1,23 @@
+---
+- hosts: windows
+  vars:
+    - atomic_dir: /path/to/atomic-red-team/atomics/
+  tasks:
+    - name: T1089 - Disable Security Tools
+      art:
+        atomic: T1089
+    - name: T1036 - Masquerading
+      art:
+        atomic: T1036
+    - name: T1050 - New Service
+      art:
+        atomic: T1036
+    - name: T1219 - Remote Access Tools 
+      # Not implemented by ART
+    - name: T1085 - Rundll32
+      art:
+        atomic: T1085
+    - name: T1078 - Valid Accounts
+      # Should be triggered by Ansible auth
+    - name: T1102
+      # Not implemented by ART

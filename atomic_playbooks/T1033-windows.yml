@@ -1,0 +1,5 @@
+---
+- hosts: windows 
+  tasks:
+    - name: Run atomic T1033
+      win_whoami:

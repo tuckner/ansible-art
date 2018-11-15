@@ -1,0 +1,28 @@
+---
+- hosts: windows
+  gather_facts: false
+  tasks:
+    - name: T1050 - Create tmp directory
+      win_file:
+        path: C:\atomic-tmp
+        state: directory
+    - name: T1050 - Service Download 
+      win_get_url:
+        url: https://github.com/redcanaryco/atomic-red-team/raw/a48a8de6dae7a01006c5b6d672bb151609955f29/atomics/T1050/bin/AtomicService.exe
+        dest: C:\atomic-tmp\AtomicService.exe
+    - name: T1050 - Service Installation
+      win_service:
+        name: AtomicTestService
+        path: C:\atomic-tmp\AtomicService.exe
+    - name: T1050 - Service Start
+      win_service:
+        name: AtomicTestService
+        state: started
+    - name: T1050 - Service Stop
+      win_service:
+        name: AtomicTestService
+        state: stopped
+    - name: T1050 - Service Remove
+      win_service:
+        name: AtomicTestService
+        state: absent

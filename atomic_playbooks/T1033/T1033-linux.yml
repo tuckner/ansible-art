@@ -1,0 +1,11 @@
+---
+- hosts: linux 
+  tasks:
+    - name: Run atomic T1033 - who
+      command: who
+    - name: Run atomic T1033 - w
+      command: w
+    - name: Run atomic T1033 - users
+      command: users
+    - name: Run atomic T1033 - whoami
+      command: whoami
